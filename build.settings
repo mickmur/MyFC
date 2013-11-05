@@ -16,7 +16,7 @@ settings =
         {
             UIAppFonts =
             {
-                "ERASBD.TTF"
+                "ErasBoldITC.ttf"
             },
             UIApplicationExitsOnSuspend = true
 

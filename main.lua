@@ -40,13 +40,43 @@ audio.play(bgSound, {channel=1, loops=-1}) --Start looping the sound.
 local custFont
 if "Win" == system.getInfo( "platformName" ) then
     custFont = "Eras Bold ITC"
+    print("Platform: Windows")
 elseif "Android" == system.getInfo( "platformName" ) then
-    custFont = "ERASBD"
+    custFont = "ErasBoldITC"
+    print("Platform: Android")
 else
     -- Mac and iOS
-    custFont = "Eras-Bold" --not sure what the font name is on Mac
+    custFont = "ErasBoldITC" --not sure what the font name is on Mac
+    print("Platform: Mac")
 end
+--local custFont = "ErasBoldITC"
+print("Custom Font name: " ..custFont)
 
+-----------------
+--find font names
+-----------------
+-- Code to have Corona display the font names found
+--[[
+local fonts = native.getFontNames()
+count = 0
+-- Count the number of total fonts
+for i,fontname in ipairs(fonts) do
+    count = count+1
+end
+print( "\rFont count = " .. count )
+
+local name = "eras"     -- part of the Font name we are looking for
+name = string.lower( name )
+
+-- Display each font in the terminal console
+for i, fontname in ipairs(fonts) do
+    j, k = string.find( string.lower( fontname ), name )
+
+    if( j ~= nil ) then
+        print( "fontname = " .. tostring( fontname ) )
+    end
+end
+--]]
 ---------------------------------
 -- SETUP HEADER CONTENT
 ---------------------------------

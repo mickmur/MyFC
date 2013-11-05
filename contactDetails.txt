@@ -1,12 +1,11 @@
-Manager: 
-Baldy Small
+Chairman: Boz Smyth
+chairman@spartakgranard.ie
 
-Current League: 
-CCFL.ie Division 3 Saturday
+Secretary: Jazzer Brady
+secretary@spartakgranard.ie
 
-Established: 
-2010
+Facebook: www.facebook.com/spartakgranardfc
 
-Home: 
-The Cauldron, Higginstown, Granard, 
-Co. Longford
+Twitter: @spartakgranardfc
+
+Website: spartakgranard.ie
